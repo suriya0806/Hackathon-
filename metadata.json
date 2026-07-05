@@ -1,0 +1,6 @@
+{
+  "name": "ConstitutionAI",
+  "description": "A premium, AI-powered Smart Governance and Constitutional Awareness platform featuring AI grievance management, real-time legal assistance, government scheme guidance, interactive quizzes, and officer analytics dashboards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

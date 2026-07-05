@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  @media print {
+    body * {
+      visibility: hidden;
+    }
+    .print\:shadow-none {
+      box-shadow: none !important;
+    }
+    .print\:border-none {
+      border: none !important;
+    }
+    .print\:p-0 {
+      padding: 0 !important;
+    }
+    /* Only print the actual printable paper card */
+    div.bg-white.text-slate-950,
+    div.bg-white.text-slate-950 * {
+      visibility: visible;
+    }
+    div.bg-white.text-slate-950 {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+    }
+  }
+}
+
